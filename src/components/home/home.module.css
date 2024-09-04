@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: fit-content;
+    background: var(--myblue);
+    border-radius: 0 0 20px 20px ;
+/* position: fixed; */
+transition-delay: height 10s;
+}
+
+.container.active{
+    height: 100vh;
+    border-radius: 0  ;
+    align-items: space-between;
+    justify-content: space-between;
+    /* transition: 2s ease;
+    transition-delay: 10s; */
+    transition-delay: height 10s;
+
+}
+
+
+.LogoContainer {
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo {
+    /* height: 50%; */
+    font-size: 50px;
+    text-decoration: none;
+    color: var(--mywhite);
+    margin-top: -75px;
+    /* position: fixed; */
+    /* background: red; */
+}
+
+
+.logo.active{
+    display:none;
+}
+.dot {
+    font-size: inherit;
+    /* transform: scale(1); */
+    font-size: 150px;
+    color: var(--mygreen);
+    text-decoration: none;
+}
+
+.button{
+
+    margin-bottom: 10px; 
+}
+
+
+.mainContainer{
+    height: 100%;
+    width: 100%;
+}
+
+.mainContainer.active{
+    display: none;
+}
