@@ -1,0 +1,137 @@
+
+.container{
+    display: flex;
+    height: 500px;
+    width: 99vw;
+    /* background: white; */
+}
+
+.infomationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 40px;
+    flex:1;
+    height: 100%;
+padding-left: 50px;
+}
+
+.heading{width: 100%;
+    /* background-color: green; */
+/* text-align: center; */
+line-height: 40px;
+font-size: 33px;
+}
+
+.dot {
+    font-size: inherit;
+    /* transform: scale(1); */
+    font-size: 70px;
+    color: var(--mygreen);
+    text-decoration: none;
+}
+
+
+.socialContainer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+
+}
+
+.socialWrapper{
+height: 50px;
+width: 100%;
+/* background: green; */
+display: flex;
+align-items: center;
+/* margin: 10px; */
+}
+
+.github{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-image: url("../../../public/github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.linkedin{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-image: url("../../../public/Linkedin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.mail{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-image: url("../../../public/Mail.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.socialText{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--mygray);
+}
+
+
+.imageContainer{
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+gap: 10px;
+padding: 50px 0px 50px 0px;
+}
+
+.download{
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: var(--mygray);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.avatar{
+
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    background-image: url("../../../public/Avatar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+
+
+/* @media (max-width: 780px) {
+.container{
+    flex-direction: column;
+}
+.imageContainer{
+    flex: 2;
+}
+
+} */

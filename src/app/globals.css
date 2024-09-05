@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --mygreen :  #114817;
   --mywhite : #f5f5dc;
@@ -10,7 +14,12 @@
 
 body{
   /* background-color: var(--myblue); */
-  color: var(--mywhite);
+  color: var(--mygray);
   box-sizing: border-box;
   margin: 0;
+  overflow: hidden;
+
+
+
 }
+

@@ -2,10 +2,11 @@
 import { useState } from "react"
 import styles from "./home.module.css"
 import Link from 'next/link'
+import LandingView from "../landingView/landingView"
 
 const home = () => {
 
-    const [view, setView] = useState(false)
+    const [view, setView] = useState(true)
     return (
         <div className={`${styles.container} ${view && styles.active}`}>
 
@@ -16,7 +17,7 @@ const home = () => {
                     <span className={styles.dot}>.</span>
                 </Link>
                 <div className={`${styles.mainContainer} ${!view && styles.active}`}>
-                    Hello World
+                    <LandingView/>
                 </div>
             </div>
                 <button className={styles.button} onClick={() => setView(!view)}>Click</button>
