@@ -2,8 +2,8 @@
 import { Inter, Mulish } from "next/font/google";
 import "./globals.css";
 import styles from './page.module.css'
-
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={styles.inter}>
-      
         {children}
         </body>
     </html>

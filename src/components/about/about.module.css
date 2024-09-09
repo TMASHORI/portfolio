@@ -1,0 +1,128 @@
+.container{
+    height: 100vh;
+
+width: 90%;
+    /* background: red; */
+    /* position: fixed; */
+z-index: 0;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+
+.linkContainer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 130px;
+    
+    }
+
+    .link{
+        text-decoration: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;    
+
+display: flex;
+height: fit-content;
+width: fit-content;
+padding: 10px;
+background:var(--mygreen);
+color: var(--mywhite);
+justify-content: flex-end;
+align-items: center;
+border-radius: 20px;
+}
+
+.img{
+    margin-left: 10px;
+}
+
+.infomationContainer{
+    height: calc(100vh - 250px);
+    width: 100%;
+    background: var(--mygray);
+    border-radius: 20px;
+display: flex;
+/* line-height: 10px; */
+}
+
+.textContainer{   
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-evenly;
+/* align-items: center; */
+}
+
+.heading{
+    font-size: 40px;
+    color: black;
+    margin-top: 1px;
+}
+
+.text{
+    margin-top: 1px;
+    font-size: 1.4rem;
+    color: black;
+    /* line-height: 10px; */
+
+}
+
+
+.social{
+    margin-top: 1px;
+    height: fit-content;
+    width: fit-content;
+background-color: var(--mymaroon);
+    padding: 10px;
+    color: var(--mywhite);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+margin-bottom: 20px;
+cursor: pointer;
+
+}
+.mail{
+    text-decoration: none;
+    font-size: 20px;
+    height: fit-content;
+    color: var(--mygray);
+    margin-left:5px ;
+}
+.imagesContainer{
+    /* display: none; */
+    width: 50%;
+    height: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+/* padding: 10px; */
+}
+
+
+@media (max-width: 784px) {
+    
+    
+.textContainer{   
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+text-align: center;
+}
+
+
+    .imagesContainer{
+        display: none;
+    }
+    
+}    

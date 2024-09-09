@@ -14,14 +14,14 @@
     line-height: 40px;
     flex:1;
     height: 100%;
-padding-left: 50px;
+padding-left: 100px;
 }
 
 .heading{width: 100%;
     /* background-color: green; */
 /* text-align: center; */
 line-height: 40px;
-font-size: 33px;
+font-size: 2rem;
 }
 
 .dot {
@@ -81,7 +81,7 @@ align-items: center;
 }
 
 .socialText{
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--mygray);
 }
@@ -96,7 +96,7 @@ align-items: center;
     align-items: center;
     flex-direction: column;
 gap: 10px;
-padding: 50px 0px 50px 0px;
+padding: 50px 100px 50px 0px;
 }
 
 .download{
@@ -114,6 +114,11 @@ padding: 50px 0px 50px 0px;
     margin-bottom: 30px;
 }
 
+.Mobiledownload{
+    display: none;
+    
+}
+
 .avatar{
 
     width: 350px;
@@ -126,12 +131,47 @@ padding: 50px 0px 50px 0px;
 }
 
 
-/* @media (max-width: 780px) {
+ @media (max-width: 784px) {
 .container{
+    /* height: fit-content; */
     flex-direction: column;
 }
-.imageContainer{
-    flex: 2;
+
+.infomationContainer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0px;
+    /* background: red; */
+    
 }
 
-} */
+
+
+.socialWrapper{
+    justify-content: center;
+    /* background: green; */
+}
+
+ .imageContainer{
+    display: none;
+} 
+.Mobiledownload{
+    display: block;
+    justify-self: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: var(--mygray);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+
+} 
