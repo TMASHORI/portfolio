@@ -6,49 +6,67 @@ import Preview from '../preview/preview'
 
 const data = [
     {
+        id: 1,
         title: "Madulo.com",
         category: "Rent and Accomidation",
         desc: "This is a Rental full stack app for local mine workers in South Africa",
-        path: "/",
+        repo: "/https://github.com/TMASHORI/RentApp",
+        website:"/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
-        img: "/briefcase.png",
+        img: "/Madulo.png",
     },
     {
+        id: 2,
         title: "YouTravel.com",
         category: "Travel and Bookings",
         desc: "This is a Travel Agency app that helps travelers find they're holiday destinations",
-        path: "/",
+        repo: "/https://github.com/TMASHORI/travelblog",
+        website:"/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
-        img: "/briefcase.png",
+        img: "/Travel.png",
     },
 ]
 
-
 const Cards = () => {
-    const [view, setView] = useState(true)
+
+    const [view, setView] = useState(false)
+    const [card, setCard] = useState(null)
+
     return (
         <article className={styles.container}>
             {data.map((card, i) => {
                 return <div key={i} className={styles.singleCard}>
-                    <div className={styles.img}>
+                    <div className={styles.imgContainer}>
                         <Image src={card.img} width={100} height={100} alt="" unoptimized />
                     </div>
+                    
                     <div className={styles.infomationContainer}>
                         <h3 className={styles.heading}>{card.title}</h3>
                         <p className={styles.category}>{card.category}</p>
                     </div>
-                    <div className={styles.button} onClick={() => { setView(!view) }}>
+                    
+                    <div className={styles.button} onClick={() => { setView(!view); setCard(card) }}>
                         <Image src="/Vector.png" width={25} height={25} alt="" />
                         <p className={styles.text}>Preview</p>
                     </div>
 
+                    {<div className={styles.Mobilebuttons}  >
+                        <a className={styles.Mobilebutton} href={card.repo}>
+                            <Image src="/Github.png" width={15} height={15} alt="" />
+                            <p className={styles.text}>Source Code</p>
+                        </a>
+                        <div className={styles.Mobilebutton}>
+                            <Image src="/Globe.png" width={15} height={15} alt="" />
+                            <p className={styles.text}>Visit Page</p>
+                        </div>
+                    </div>}
 
                 </div>
             })}
             {view &&
-                <Preview view={view} setView={setView} />
+                <Preview view={view} setView={setView} website={card} />
             }
         </article>
     )
