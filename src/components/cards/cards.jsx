@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import styles from "./cards.module.css"
 import Image from 'next/image'
 import Preview from '../preview/preview'
+import Link from 'next/link'
 
 const data = [
     {
@@ -10,7 +11,7 @@ const data = [
         title: "Madulo.com",
         category: "Rent and Accomidation",
         desc: "This is a Rental full stack app for local mine workers in South Africa",
-        repo: "/https://github.com/TMASHORI/RentApp",
+        repo: "http://github.com/TMASHORI/RentApp",
         website:"/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
@@ -21,7 +22,7 @@ const data = [
         title: "YouTravel.com",
         category: "Travel and Bookings",
         desc: "This is a Travel Agency app that helps travelers find they're holiday destinations",
-        repo: "/https://github.com/TMASHORI/travelblog",
+        repo: "http://github.com/TMASHORI/travelblog",
         website:"/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
@@ -53,10 +54,10 @@ const Cards = () => {
                     </div>
 
                     {<div className={styles.Mobilebuttons}  >
-                        <a className={styles.Mobilebutton} href={card.repo}>
+                        <Link className={styles.Mobilebutton} href={card.repo} target="_blank">
                             <Image src="/Github.png" width={15} height={15} alt="" />
                             <p className={styles.text}>Source Code</p>
-                        </a>
+                        </Link>
                         <div className={styles.Mobilebutton}>
                             <Image src="/Globe.png" width={15} height={15} alt="" />
                             <p className={styles.text}>Visit Page</p>

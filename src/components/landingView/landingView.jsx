@@ -35,7 +35,7 @@ const LandingView = () => {
             </div>
             <div className={styles.imageContainer}>
                 <a href="/ThatoCv.pdf" className={styles.download} download="MashoriCV">Download CV</a>
-                <Image src="/Avatar.png" width={700} height={700} alt="" unoptimized className={styles.avatar} unoptimized/>
+                <Image src="/Avatar.png" width={700} height={700} alt="" className={styles.avatar} unoptimized/>
 
             </div>
         </section>

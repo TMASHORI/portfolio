@@ -22,6 +22,7 @@ align-items: center;
     right: -20px;
     background: white;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .buttons{

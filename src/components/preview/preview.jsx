@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from "./preview.module.css"
+import Link from 'next/link'
 
 const Preview =  ({ view, setView,website}) => {
 
@@ -11,10 +12,10 @@ const Preview =  ({ view, setView,website}) => {
                 <Image src="/Close.png" height={50} width={50} alt="" className={styles.close} unoptimized onClick={() => { setView(false) }} />
                 <Image src={website.img} height={250} width={450} alt="" className={styles.img} unoptimized/>
                 <div className={styles.buttons}  >
-                    <a className={styles.button} href={website.bath}>
+                    <Link className={styles.button} href={website.bath} target="_blank">
                         <Image src="/Github.png" width={15} height={15} alt="" />
                         <p className={styles.text}>Source Code</p>
-                    </a>
+                    </Link>
                     <div className={styles.button}>
                         <Image src="/Globe.png" width={15} height={15} alt="" />
                         <p className={styles.text}>Visit Page</p>
