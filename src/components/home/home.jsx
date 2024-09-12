@@ -5,7 +5,7 @@ import Link from 'next/link'
 import LandingView from "../landingView/landingView"
 import Image from "next/image"
 
-const home = () => {
+const Home = () => {
 
     const [view, setView] = useState(true)
     return (
@@ -28,4 +28,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home

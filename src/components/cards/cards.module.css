@@ -103,9 +103,9 @@ text-decoration: none;
     
     .Mobilebutton{
             justify-self: end;
-            height: fit-content;
+            height: 60px;
             width:fit-content;
-            padding :0 20px;
+            padding :0 10px ;
             border: none;
             text-align: center;
             display: flex;

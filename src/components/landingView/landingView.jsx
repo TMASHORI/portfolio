@@ -10,7 +10,7 @@ const LandingView = () => {
         <section className={`${styles.container}`}>
             <div className={styles.infomationContainer}>
                 <a href="/ThatoCv.pdf" className={styles.Mobiledownload} download="MashoriCV">Download CV</a>
-                <h1 className={styles.heading}>Hello 👋 i'm Thato <span>Mashori <span className={styles.dot}>.</span>
+                <h1 className={styles.heading}>Hello 👋 im Thato <span>Mashori <span className={styles.dot}>.</span>
                     <WordRotate
                         className="text-2xl font-bold text-black dark:text-white"
                         words={["Front-End", "UI/UX"]}

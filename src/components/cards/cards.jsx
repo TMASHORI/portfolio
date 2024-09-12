@@ -12,7 +12,7 @@ const data = [
         category: "Rent and Accomidation",
         desc: "This is a Rental full stack app for local mine workers in South Africa",
         repo: "http://github.com/TMASHORI/RentApp",
-        website:"/",
+        site: "http://madulo.vercel.app/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
         img: "/Madulo.png",
@@ -23,7 +23,7 @@ const data = [
         category: "Travel and Bookings",
         desc: "This is a Travel Agency app that helps travelers find they're holiday destinations",
         repo: "http://github.com/TMASHORI/travelblog",
-        website:"/",
+        site: "http://travelmania.vercel.app/",
         type: "website",
         stack: "Next | Mongo | NextAuth | Figma",
         img: "/Travel.png",
@@ -42,28 +42,34 @@ const Cards = () => {
                     <div className={styles.imgContainer}>
                         <Image src={card.img} width={100} height={100} alt="" unoptimized />
                     </div>
-                    
                     <div className={styles.infomationContainer}>
                         <h3 className={styles.heading}>{card.title}</h3>
                         <p className={styles.category}>{card.category}</p>
                     </div>
-                    
                     <div className={styles.button} onClick={() => { setView(!view); setCard(card) }}>
                         <Image src="/Vector.png" width={25} height={25} alt="" />
                         <p className={styles.text}>Preview</p>
                     </div>
-
                     {<div className={styles.Mobilebuttons}  >
-                        <Link className={styles.Mobilebutton} href={card.repo} target="_blank">
+                        <Link
+                            href={card.repo}
+                            target="_blank"
+                            className={styles.Mobilebutton}
+                        >
                             <Image src="/Github.png" width={15} height={15} alt="" />
                             <p className={styles.text}>Source Code</p>
                         </Link>
                         <div className={styles.Mobilebutton}>
-                            <Image src="/Globe.png" width={15} height={15} alt="" />
-                            <p className={styles.text}>Visit Page</p>
+                            <Link 
+                            href={card.site} 
+                            target="_blank"
+                            className={styles.Mobilebutton} 
+                            >
+                                <Image src="/Globe.png" width={15} height={15} alt="" />
+                                <p className={styles.text}>Visit Page</p>
+                            </Link>
                         </div>
                     </div>}
-
                 </div>
             })}
             {view &&

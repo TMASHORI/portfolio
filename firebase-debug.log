@@ -1,0 +1,10 @@
+[debug] [2024-09-11T16:46:23.265Z] ----------------------------------------------------------------------
+[debug] [2024-09-11T16:46:23.295Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\THATO\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init deploy
+[debug] [2024-09-11T16:46:23.297Z] CLI Version:   13.16.0
+[debug] [2024-09-11T16:46:23.298Z] Platform:      win32
+[debug] [2024-09-11T16:46:23.298Z] Node Version:  v20.16.0
+[debug] [2024-09-11T16:46:23.299Z] Time:          Wed Sep 11 2024 18:46:23 GMT+0200 (South Africa Standard Time)
+[debug] [2024-09-11T16:46:23.300Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-11T16:46:23.341Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-11T16:46:23.343Z] > authorizing via signed-in user (chachumashori@gmail.com)
