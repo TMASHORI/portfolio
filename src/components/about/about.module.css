@@ -52,7 +52,7 @@
 
 .textContainer {
     height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@
 }
 
 .heading {
-    font-size: 40px;
+    font-size: 2rem;
     color: black;
     margin-top: 1px;
 }

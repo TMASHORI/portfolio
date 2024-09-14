@@ -1,24 +1,27 @@
 
 .container{
-height: 100vh;
+    display: flex;
+    height: 500px;
+    width: 99vw;
+    /* background: white; */
 }
 
 .infomationContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    /* gap: 40px; */
+    justify-content: space-evenly;
+    line-height: 40px;
     flex:1;
-    height:70vh;
-/* padding-left: 100px; */
-/* background-color: green; */
+    height: 100%;
+padding-left: 100px;
 }
 
 .heading{width: 100%;
+    /* background-color: green; */
 /* text-align: center; */
 line-height: 40px;
-font-size: 2rem;
+font-size: 2.5rem;
 }
 
 .dot {
@@ -31,12 +34,10 @@ font-size: 2rem;
 
 
 .socialContainer{
-    height: 30vh;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     /* background: red; */
 
 }
@@ -49,17 +50,6 @@ display: flex;
 align-items: center;
 /* margin: 10px; */
 }
-
-
-.socialText{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: var(--mygray);
-    width: 80%;
-}
-
-
-
 
 .github{
     width: 30px;
@@ -90,6 +80,11 @@ align-items: center;
     background-repeat: no-repeat;
 }
 
+.socialText{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--mygray);
+}
 
 
 .imageContainer{
@@ -164,7 +159,24 @@ padding: 50px 100px 50px 0px;
  .imageContainer{
     display: none;
 } 
+.Mobiledownload{
+    display: block;
+    justify-self: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background: var(--mygray);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px;
+    position: relative;
+    top: 15px;
+}
 
 
 } 
-

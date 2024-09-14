@@ -25,3 +25,9 @@ body {
 
 
 }
+
+@media (max-width:412px) {
+    body{
+        overflow: scroll;
+    }
+}
