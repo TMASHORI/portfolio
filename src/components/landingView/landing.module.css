@@ -133,10 +133,7 @@ padding: 50px 100px 50px 0px;
 
  @media (max-width: 784px) {
 .container{
-    /* height: fit-content; */
     flex-direction: column;
-    /* line-height: 20px; */
-    /* background: red; */
     height: 500px;
 }
 
@@ -145,15 +142,12 @@ padding: 50px 100px 50px 0px;
     justify-content: center;
     text-align: center;
     padding-left: 0px;
-    /* background: red; */
-    
 }
 
 
 
 .socialWrapper{
     justify-content: center;
-    /* background: green; */
 }
 
  .imageContainer{
@@ -177,6 +171,4 @@ padding: 50px 100px 50px 0px;
     position: relative;
     top: 15px;
 }
-
-
 } 
