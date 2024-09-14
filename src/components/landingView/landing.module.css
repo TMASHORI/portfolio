@@ -26,7 +26,6 @@ font-size: 2.5rem;
 
 .dot {
     font-size: inherit;
-    /* transform: scale(1); */
     font-size: 70px;
     color: var(--mygreen);
     text-decoration: none;
@@ -38,14 +37,11 @@ font-size: 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background: red; */
-
 }
 
 .socialWrapper{
 height: 50px;
 width: 100%;
-/* background: green; */
 display: flex;
 align-items: center;
 /* margin: 10px; */
@@ -130,7 +126,6 @@ padding: 50px 100px 50px 0px;
     margin-bottom: 30px;
 }
 
-
  @media (max-width: 784px) {
 .container{
     flex-direction: column;
@@ -143,8 +138,6 @@ padding: 50px 100px 50px 0px;
     text-align: center;
     padding-left: 0px;
 }
-
-
 
 .socialWrapper{
     justify-content: center;
