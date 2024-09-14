@@ -9,7 +9,7 @@
     position: fixed;
     width: 100vw;
     top: 0;
-    z-index: 0;
+    z-index: 1;
 
     
 }
@@ -69,3 +69,11 @@ cursor: pointer;
     display: none;
 }
 
+
+
+@media (max-width: 412px) {
+.arrow{
+    position: relative;
+    bottom: 20px;
+}
+}

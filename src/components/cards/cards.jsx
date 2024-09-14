@@ -46,9 +46,11 @@ const Cards = () => {
                         <h3 className={styles.heading}>{card.title}</h3>
                         <p className={styles.category}>{card.category}</p>
                     </div>
-                    <div className={styles.button} onClick={() => { setView(!view); setCard(card) }}>
-                        <Image src="/Vector.png" width={25} height={25} alt="" />
-                        <p className={styles.text}>Preview</p>
+                    <div className = {styles.buttonContainer }>
+                        <div className={styles.button} onClick={() => { setView(!view); setCard(card) }}>
+                            <Image src="/Vector.png" width={25} height={25} alt="" />
+                            <p className={styles.text}>Preview</p>
+                        </div>
                     </div>
                     {<div className={styles.Mobilebuttons}  >
                         <Link
@@ -60,10 +62,10 @@ const Cards = () => {
                             <p className={styles.text}>Source Code</p>
                         </Link>
                         <div className={styles.Mobilebutton}>
-                            <Link 
-                            href={card.site} 
-                            target="_blank"
-                            className={styles.Mobilebutton} 
+                            <Link
+                                href={card.site}
+                                target="_blank"
+                                className={styles.Mobilebutton}
                             >
                                 <Image src="/Globe.png" width={15} height={15} alt="" />
                                 <p className={styles.text}>Visit Page</p>

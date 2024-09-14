@@ -7,7 +7,7 @@ import Image from "next/image"
 
 const Home = () => {
 
-    const [view, setView] = useState(true)
+    const [view, setView] = useState(false)
     return (
         <div className={`${styles.container} ${view && styles.active}`}>
 

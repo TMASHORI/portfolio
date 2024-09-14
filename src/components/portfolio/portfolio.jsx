@@ -13,6 +13,7 @@ const Portfolio = () => {
             </div>
             <div className={styles.infomationContainer}>
                 <h1 className={styles.heading}>Featured Works</h1>
+                <a href="/Mashori.pdf" className={styles.Mobiledownload} target="_blank" >Download CV</a>
                 <Cards />
             </div>
         </section>

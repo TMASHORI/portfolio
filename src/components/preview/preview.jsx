@@ -14,7 +14,7 @@ const Preview = ({ view, setView, website }) => {
                 <Image src={website.img} height={250} width={450} alt="" className={styles.img} unoptimized />
                 <div className={styles.buttons}  >
                     <Link className={styles.button} href={website.site} target="_blank">
-                        <Image src="/Github.png" width={15} height={15} alt="" />
+                        <Image src="/Hub.png" width={15} height={15} alt="" />
                         <p className={styles.text}>Source Code</p>
                     </Link>
                     <div className={styles.button}>

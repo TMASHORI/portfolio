@@ -21,7 +21,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     overflow: hidden;
-
+/* scroll-behavior: smooth; */
 
 
 }
