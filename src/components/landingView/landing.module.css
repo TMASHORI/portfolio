@@ -139,7 +139,9 @@ padding: 50px 100px 50px 0px;
     padding-left: 0px;
 }
 
+
 .socialWrapper{
+    /* display: block; */
     justify-content: center;
 }
 
