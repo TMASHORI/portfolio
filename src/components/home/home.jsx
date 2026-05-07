@@ -22,7 +22,7 @@ const Home = () => {
                 </div>
             </div>
                 {/* <Image scr="/Down.png" height={50} width={50} alt=""  unoptimized/> */}
-                <Image src={view ? "Up.png" : "/Down.png"} width={30} height={30} alt="" onClick={() => setView(!view)} unoptimized className={styles.arrow}/>
+                <Image src={view ? "Down.png" : "/Up.png"} width={30} height={30} alt="" onClick={() => setView(!view)} unoptimized className={styles.arrow}/>
             
         </div>
     )
